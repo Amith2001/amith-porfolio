@@ -1,0 +1,444 @@
+*{ margin: 0;
+    border: 0;
+    font-family: Cambria;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    background: rgb(0, 0, 0);
+    color: antiquewhite;
+   cursor: default;
+}
+
+#header{
+    padding: 10% 0% 0% 0%;
+    width: 100%;
+    height: 50%;
+    background-size:auto;
+    background-position:left;
+}
+.container{
+    padding: 2% 20%;
+}
+/*---------------------------------about----------------------------------*/
+#about{
+    padding: 10% 20% 0% 20%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-text h1{
+    padding: 5% 20%;
+    font-size: 80px;
+   }
+.header-text h1 span{
+       color: crimson;
+   }
+
+/*---------------------------------navigation----------------------------------*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    border-radius: 50%;
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: azure;
+    text-decoration:none ;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'' ;
+    width: 0 ;
+    height: 3px ;
+    background: crimson ;
+    position:absolute ;
+    left:0 ;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav .fas{
+    display: none;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*---------------------------------education----------------------------------*/
+
+#edu{
+    padding: 10% 20% 0% 20%;
+    justify-content: center;
+    align-self:center;
+}
+#edu ul li {
+    padding: 10% 0% 10% 0%;
+    display: inline-block;
+    color:black;
+    
+}
+
+/*---------------popup1-----------------*/
+
+#openPopup1{
+    width: 250px ;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 30px;
+    opacity: 1;
+    color: rgba(255, 255, 255);
+}
+#openPopup1:hover{
+    opacity: 0.5;
+}
+.popup1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup-content1 {
+    background-color: #000000;
+    color: crimson;
+    font-family: fantasy;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.close1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/*---------------popup2-----------------*/
+
+#openPopup2{
+    width: 250px ;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 30px;
+    opacity: 1;
+    color: rgba(255, 255, 255);
+}
+#openPopup2:hover{
+    opacity: 0.5;
+}
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup-content2 {
+    background-color: #000000;
+    color: crimson;
+    font-family: fantasy;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.close2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/*---------------popup3-----------------*/
+
+#openPopup3{
+    width: 250px ;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 30px;
+    opacity: 1;
+    color: rgba(255, 255, 255);
+}
+#openPopup3:hover{
+    opacity: 0.5;
+}
+.popup3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup-content3{
+    background-color: #000000;
+    color: crimson;
+    font-family: fantasy;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.close3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+/*---------------------------------experience----------------------------------*/
+
+#exp{
+    padding: 10% 20% 0% 20%;
+    justify-content: center;
+    align-self:center;
+}
+#exp ul li {
+    padding: 10% 0% 10% 0%;
+    display: inline-block;
+    color:black;
+}
+
+/*---------------popup4-----------------*/
+
+#openPopup4{
+    width: 250px ;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 30px;
+    opacity: 1;
+    color: rgba(255, 255, 255);
+}
+#openPopup4:hover{
+    opacity: 0.5;
+}
+.popup4 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup-content4 {
+    background-color: #000000;
+    color: crimson;
+    font-family: fantasy;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.close4 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/*---------------popup5-----------------*/
+
+#openPopup5{
+    width: 250px ;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 30px;
+    opacity: 1;
+    color: rgba(255, 255, 255);
+}
+#openPopup5:hover{
+    opacity: 0.5;
+}
+.popup5 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup-content5 {
+    background-color: #000000;
+    color: crimson;
+    font-family: fantasy;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.close5 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/*---------------popup6-----------------*/
+
+#openPopup6{
+    width: 250px ;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 30px;
+    opacity: 1;
+    color: rgba(255, 255, 255);
+}
+#openPopup6:hover{
+    opacity: 0.5;
+}
+.popup6 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup-content6 {
+    background-color: #000000;
+    color: crimson;
+    font-family: fantasy;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;   
+}
+.close6 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/*---------------------------------contact----------------------------------*/
+
+#contact{
+    padding: 10% 20% 30% 20%;
+    justify-content: center;
+    align-self:center;
+}
+a{
+    color:#ffffff;
+    text-decoration: none;
+} 
+#contact ul li {
+    padding: 0% 0% 0% 0%;
+    width: 180px ;
+    height: 40px;
+    border-radius: 10%;
+    background-color: rgb(44, 44, 44);
+    display: inline-block;
+    color:black;
+    text-align: center;
+    justify-content: center;
+}
+.contact ul li:hover{
+    opacity: 0.5;
+}
+
+@media only screen and (max-width:600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        font-size: 25px;
+        display: block;
+    }
+    nav ul{
+        background:grey ;
+        position:fixed ;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        }
+}
