@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amith's portfolio website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/1ddcc03463.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+          background-image: url('https://wallpaper-house.com/data/out/7/wallpaper2you_200613.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover
+        }
+        </style>
+</head>
+<body>
+
+    <script src="func.js"></script>
+    <div id="header">
+        <div class="container">
+            <nav><div class="home"></div>
+                <img src="C:\Users\admin\Desktop\resume\portfolio\mypic.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+        </div>
+    </div>
+    <div class="header-text">
+        <h1>Hi im <span>Amith</span></h1>
+</div>
+    <!------------------------------About------------------------------------>
+    <div id="about">
+                 
+                    <h1 style="color: crimson;padding: 0% 0% 5% 0%;">About Me</h1>
+                    <p>Hardworking and eager to learn more in the field while
+                    <br>supporting employee needs and contributing to company 
+                    <br>success. Enthusiastic for enhancing skills for successful 
+                    <br>career. Quick-learner with positive attitude, ready to make 
+                    <br>immediate impact.
+                    </p>
+     </div>
+
+<!------------------------------education------------------------------------>
+    <div id="edu">
+               
+            <h1 style="color: crimson;font-size: 70px;">Education</h1>
+        <ul>
+              <li>
+                     <button id="openPopup1">engineering</button>
+                        <div class="popup1" id="popup1">
+                            <div class="popup-content1">
+                                <span class="close1" id="closePopup1">&times;</span>
+                                     <p>
+                                        <br>College:Global Academy of Technology-Bengaluru
+                                        <br>University:VTU
+                                        <br>Course:Electronics and Communication 
+                                        <br>Score:8.1 CGPA
+                                        <br>Years:2019-2023
+                                    </p>
+                            </div>
+                        </div>          
+            </li>           
+            <li>
+                <button id="openPopup2">Pre University</button>
+                <div class="popup2" id="popup2">
+                    <div class="popup-content2">
+                        <span class="close2" id="closePopup2">&times;</span>
+                        <p>
+                            <br>College:SBM Jain college,V.V.Puram,Bengaluru
+                            <br>Cousre:electronics    
+                            <br>Score:81.5 %
+                            <br>Years:2017-2019
+                        </p> 
+                    </div>
+                </div> 
+            </li>  
+            <li>
+                <button id="openPopup3">School-10th</button>
+                <div class="popup3" id="popup3">
+                    <div class="popup-content3">
+                        <span class="close3" id="closePopup3">&times;</span>
+                        <p>
+                        <br>School:Little Flower Public School
+                        <br>Board:ICSE 
+                        <br>Score:79.8 %
+                        <br>YOP:2017
+                        </p> 
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>  
+    <!------------------------------Experience------------------------------------>
+    <div id="exp">
+            <h1 style="color: crimson;font-size: 70px;">Experience</h1>
+            <h2 style="color: crimson;font-size: 50px;padding:5% 0% 1% 0%;">Internships</h2>
+        <ul>
+            <li>
+                <button id="openPopup4">Internet of  Things(IoT)</button>
+                <div class="popup4" id="popup4">
+                    <div class="popup-content4">
+                        <span class="close4" id="closePopup4">&times;</span>
+                        <p>
+                            <br>~ Emertxe-Bengaluru
+                            <br>~ Projects-‘Controlling home appliances’
+                            <br>~ April 2023-may 2023
+                            <br>~ <a href="https://github.com/Amith2001/IoT" target="_blank">Github link</a>
+                        </p> 
+                    </div>
+                </div>           
+            </li>
+            <li>
+                <button id="openPopup5">Machine Learning using Python</button>
+                <div class="popup5" id="popup5">
+                    <div class="popup-content5">
+                        <span class="close5" id="closePopup5">&times;</span>
+                        <p>
+                            <br>~ Varcons Technology-Bengaluru
+                            <br>~ Projects-'Predictive Sentiment Analysis of Stocks'
+                            <br>~ August 2022-september 2022
+                            <br>~ <a href="https://github.com/Amith2001/machine-learning" target="_blank">Github link</a>
+                        </p> 
+                    </div>
+                </div>
+            </li>
+            <li>
+                <button id="openPopup6">Full Stack Web Development</button>
+                <div class="popup6" id="popup6">
+                    <div class="popup-content6">
+                        <span class="close6" id="closePopup6">&times;</span>
+                        <p>
+                            <br>~ Compsoft Technology-Bengaluru
+                            <br>~ Projects-Built a “Custom Resume Generator”
+                            <br>~ October 2021-November 2021
+                            <br>~ <a href="https://github.com/Amith2001/customcv" target="_blank">Github link</a>
+                        </p> 
+                    </div>
+                </div>            
+            </li>
+        </ul>
+    </div>
+    <!------------------------------contact------------------------------------>
+    <div id="contact" class="contact"> 
+                <h1 style="padding: 5% 0%;color: crimson;font-size: 70px;">Contact</h1>
+                <ul>
+                    <li><a onclick="copyText()" class="btn"><img src="mail.png" alt="email">  Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/amith-r-773449245/" target="_blank" class="btn"><img src="linkedin.png" alt="linkedin">   LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/_a.m.i.t.h_" target="_blank" class="btn"><img src="instagram.png" alt="instagram">   Instagram</a></li>
+                    <li><a href="https://wa.me/917996410020" target="_blank" class="btn"><img src="whatsapp.png" alt="call">   Call</a></li>
+                </ul>
+                
+              
+    </div>
+</body>
+</html>
